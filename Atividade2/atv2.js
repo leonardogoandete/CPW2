@@ -42,6 +42,9 @@ function mesDigitado(mes) {
 }
 
 var data = prompt("Informe a Data no Formato dd/MM/aaaa");
+//console.log(data);
 var dataFormatada = Date(data);
+//console.log(dataFormatada);
 var separador = data.split("/");
+//console.log(separador);
 alert("--- Data Formatada ---\n" + separador[0] + " de " + mesDigitado(parseInt(separador[1])) + " de " + separador[2]);
